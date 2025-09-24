@@ -29,7 +29,7 @@ public class Task2 {
     public void negativeLoginTest() {
         SoftAssert softAssert = new SoftAssert();
 
-        // 1. Navigate
+        // 1. Navigate to the login page
         driver.get("https://claruswaysda.github.io/signIn.html");
 
         // 2. Enter wrong username

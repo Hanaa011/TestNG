@@ -23,7 +23,7 @@ public class Task1 {
     @Parameters("searchKeyword")
     @Test
     public void testAmazonSearch(String keyword) {
-        // 1. Open Amazon1
+        // 1. Open Amazon
         driver.get("https://www.amazon.com/");
 
         // 2. If "Continue shopping" button appears, click it

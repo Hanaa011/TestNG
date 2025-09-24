@@ -27,7 +27,7 @@ public class Task1 {
 
     @Test
     public void positiveLoginTest() {
-        // 1. Navigate11
+        // 1. Navigate to the login page
         driver.get("https://claruswaysda.github.io/signIn.html");
 
         // 2. Enter username
