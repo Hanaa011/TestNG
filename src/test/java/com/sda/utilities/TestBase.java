@@ -16,7 +16,7 @@ public abstract class TestBase {
     @BeforeMethod
     @Parameters("browser")
     public void setUp(@Optional("chrome") String browser) {
-        System.out.println("🚀 Launching browser: " + browser);
+        System.out.println("Launching browser: " + browser);
 
         switch (browser.toLowerCase()) {
             case "firefox":
@@ -27,7 +27,7 @@ public abstract class TestBase {
                 break;
             default:
                 ChromeOptions options = new ChromeOptions();
-                options.setAcceptInsecureCerts(true); // ✅ يسمح بتجاوز تحذير SSL
+                options.setAcceptInsecureCerts(true);
                 driver = new ChromeDriver(options);
         }
 
@@ -37,7 +37,7 @@ public abstract class TestBase {
 
     @AfterMethod
     public void tearDown() {
-        System.out.println("🧹 Closing browser...");
+        System.out.println("Closing browser...");
         if (driver != null) {
             driver.quit();
         }
